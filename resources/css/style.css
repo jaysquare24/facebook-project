@@ -45,8 +45,6 @@ h2{
     
 }
 
-
-
 .account-login{ 
      box-sizing: border-box ;
      background-color: white ;
@@ -91,6 +89,11 @@ label{
                
 }
 
+.input-field img{
+     display: none;
+    
+}
+
 .login input{ 
      display: block;
      width: 90%;
@@ -106,6 +109,26 @@ label{
 }
        
 .login input:hover{background-color: rgb(9, 60, 226);  }
+
+.forgot-password{
+     width: 90%;
+     display: block;
+     margin: auto;
+     text-align: center;
+     padding: 10px 10px;
+     border-bottom: 1px solid rgb(216, 214, 214);
+     padding-bottom: 20px;
+     margin-top: 0.5rem;
+     margin-bottom:1.5rem ;
+     font-size:14px ;
+     font-weight: 500;
+     font-family: Helvetica, Arial, sans-serif;
+     color: #0866ff;
+     text-decoration-line: none;}
+
+.forgot-password:hover{ 
+     text-decoration-line: underline;
+}
 
 .create-new{ 
      display: block;
@@ -128,32 +151,11 @@ label{
      background-color: rgb(8, 154, 8);
 }
 
-.forgot-password{
-     width: 90%;
-     display: block;
-     margin: auto;
-     text-align: center;
-     padding: 10px 10px;
-     border-bottom: 1px solid rgb(216, 214, 214);
-     padding-bottom: 20px;
-     margin-top: 0.5rem;
-     margin-bottom:1.5rem ;
-     font-size:14px ;
-     font-weight: 500;
-     font-family: Helvetica, Arial, sans-serif;
-     color: #0866ff;
-     text-decoration-line: none;}
-
-.forgot-password:hover{ 
-     text-decoration-line: underline;
-}
-
-.link{
+.link-container{
      box-sizing: border-box;
      width: 100%;
 }
-                
-                  
+                                 
 .createpage{ 
      text-align: center;
 }
@@ -166,17 +168,17 @@ label{
 
 #createpage:hover{ 
      text-decoration: underline;
-
-
 }
 
 footer{
      display: none;
 }
 
+/* Mobile Phone responsive style*/
 @media only screen and (max-width: 430px) {
 
      body{
+          box-sizing: border-box;
           background-color: rgb(24, 24, 25);
 
      }
@@ -198,15 +200,13 @@ footer{
           width: 60px;
          
      }
-     
     
      .display{ 
           box-sizing: border-box;
           width: 100%;
           margin: auto;
           display:block;
-          margin-top: 40%;
-         
+          margin-top: 40%;    
          
      }
      .section2{
@@ -215,8 +215,12 @@ footer{
           
      }
 
-     .account-login{
-          background-color: none;
+     .account-login{ 
+          box-sizing: border-box ;
+          background-color:rgb(24, 24, 24);  
+          width: 100%;
+          border:  none;
+                 
      }
 
      .formgroup-input{
@@ -226,9 +230,7 @@ footer{
           color: white;
           padding-top: 0.8rem;
           padding-left: 0.4rem;
-          border-radius: 15px;
-
-          
+          border-radius: 15px;    
           
      }
 
@@ -247,7 +249,7 @@ footer{
           color: transparent;
      }
 
-     label{
+    label{
           position:absolute;
           display: block;
           font-size: 1.1rem;
@@ -261,90 +263,90 @@ footer{
           
      }
 
+     .input-field img{
+          position:absolute;
+          display: block;
+          top:1.1rem;
+          right: 2rem;
+          width: 1rem;
+         
+     }
+
     .formgroup-input:focus + label, 
     .formgroup-input:not(:placeholder-shown) + label{
       margin-top: -0.4rem;
       font-size: 0.8rem;
      
      }
-
-   
-     .createpage{
-          display: none;
-
+  
+    .login input{
+       width: 90%;
+       font-size: 0.8rem;
+       background-color: #7520fe;
+       border-radius: 60px;
+       padding: 3%;
+     
      }
 
-   .account-login{ 
-     box-sizing: border-box ;
-     background-color:rgb(24, 24, 24);  
-     width: 100%;
-     border:  none;
-            
-  }
-
-  .login input{
-     width: 90%;
-     font-size: 1rem;
-     background-color: #7520fe;
-     border-radius: 60px;
-  }
-
-  .forgot-password{
-     border-bottom: none;
-     color: white;
+    .forgot-password{
+       border-bottom: none;
+       color: white;
     
-  }
+     }
 
     main .create-new{
-     display: none;
-  }
+       display: none;
+     }
 
     footer{
-     box-sizing: border-box;
-     width: 100%;
-     margin-bottom: 0px;
-     display: block;
-   }
+       box-sizing: border-box;
+       width: 100%;
+       margin-top: 3rem;
+       margin-bottom: 0px;
+      display: block;
+     }
 
- #create-new {
-     box-sizing: border-box;
-     width: 90%;
-     margin: auto;
-     border-radius: 60px;
-     background-color: rgb(24, 24, 24); 
-     border: 1.5px solid rgb(88, 88, 248);
-    
+    #create-new {
+       box-sizing: border-box;
+       width: 90%;
+       margin: auto;
+       border-radius: 60px;
+       background-color: rgb(24, 24, 24); 
+       border: 1.5px solid rgb(88, 88, 248);
          
-}
+     }
 
-#create-new a{
-     display: block;
-     color:  rgb(88, 88, 248);
-     text-align: center;
-     font-size: 0.8rem;
-     padding: 2%;
-     text-decoration: none;
-     font-family: Arial, Helvetica, sans-serif;
-}
+     #create-new a{
+       display: block;
+       color:  rgb(88, 88, 248);
+       text-align: center;
+       font-size: 0.8rem;
+       padding: 3%;
+       text-decoration: none;
+       font-family: Arial, Helvetica, sans-serif;
+     }
     
-.meta{
-     box-sizing: border-box;
-     width: 100%;
-     display: inline-flex;
-     align-self: center;
+     .meta{
+       box-sizing: border-box;
+       width: 100%;
+       display: inline-flex;
+       align-self: center;
 
-}
-.meta img{
-     width: 10px;
-     height: 10px;
-     vertical-align: middle;
-}
-.meta p{
-     margin: auto;
-     font-size: 10px;
-     color: lightgrey;
-     font-family:Arial;
-}
+     }
+     .meta img{
+       width: 10px;
+       height: 10px;
+       vertical-align: middle;
+     }
+     .meta p{
+       margin: auto;
+       font-size: 10px;
+       color: lightgrey;
+       font-family:Arial;
+     }
+
+     .createpage{
+       display: none;
+     }
      
-
 }
