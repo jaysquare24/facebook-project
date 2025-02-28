@@ -94,7 +94,7 @@ label{
     
 }
 
-.login input{ 
+#login{ 
      display: block;
      width: 90%;
      margin: auto;
@@ -279,19 +279,13 @@ footer{
      
      }
 
-     .login{
-          box-sizing: border-box;
-          width: 90%;
-          margin: auto;
-
-         
-     }
+     
   
-     .login input{
-          width: 100%;
+     #login{
+          width: 90%;
           font-size: 0.8rem;
           background-color: #7520fe;
-          padding: 1.2rem ;
+         
           border-radius: 55px;
           
         
