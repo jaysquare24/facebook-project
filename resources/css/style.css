@@ -108,7 +108,7 @@ label{
      
 }
        
-.login input:hover{background-color: rgb(9, 60, 226);  }
+#login:hover{background-color: rgb(9, 60, 226);  }
 
 .forgot-password{
      width: 90%;
@@ -282,14 +282,13 @@ footer{
      
   
      #login{
-          width: 90%;
-          font-size: 0.8rem;
+          
+          font-size: 16px;
           background-color: #7520fe;
-         
           border-radius: 55px;
           
         
-        }
+     }
    
     .forgot-password{
        border-bottom: none;
